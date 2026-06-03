@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+    <link rel="stylesheet" href="ow12.CSS"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src = "ow12.js" defer></script> 
+ 
+
+    <title>a2-ow12</title> 
+
+</head> 
+<!--code above sets the title and links the CSS and JS files-->
+<div id="modal" class="modal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+    <div class = "modal-content"   >
+        <p id="modalMessage"></p>
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+</div>
+<!--code above sets the modal that will be displayed when the game is won-->
+<body> 
+
+    <h1>Matching Pairs Game</h1> 
+
+    <div class = "BoardSize">  
+    
+
+        <label for = "selectBoardSize"> Select a board size</label><br/> 
+
+        <input class = "boardSizeInput" type = "radio" id="2x4" name="boardSize" value="2x4" /> 
+        <label for = "2x4"> 2 x 4</label> 
+
+        <input class = "boardSizeInput" type = "radio" id="4x4" name="boardSize" value="4x4" /> 
+        <label for = "4x4"> 4 x 4</label> 
+
+        <input class = "boardSizeInput" type = "radio" id="6x4" name="boardSize" value="6x4" /> 
+        <label for = "6x4"> 6 x 4</label> 
+
+        <p id="test"></p>
+
+    </div>
+
+    <!--code above sets the heading and all the radio buttons--> 
+</body> 
+
+<div class = controller> 
+
+</div>
+<!--code above sets the controller that will be used to control the game-->
+ 
+
+<div class = "container"> 
+
+</div> 
+<!--code above sets the container that will hold all the cards-->
+
+<div id = "counters" style="display:none ; text-align: center; padding: 10px;"> 
+
+    <p>No. of Clicks: <span id="clickCount">0</span></p>
+    <p>No. of Pairs: <span id="pairCount">0</span></p>
+</div>
+
+<!--code above sets the game board and all the cards--> 
